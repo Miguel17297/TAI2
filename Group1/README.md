@@ -1,4 +1,4 @@
-# TAI Assigment 1
+# TAI Assigment 2 2 
 
 Group project for the TAI course inserted into the Masters in Informatics Engineering at Aveiro University
 
