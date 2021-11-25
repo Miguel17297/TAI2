@@ -1,0 +1,332 @@
+------ text_size=20 ----------
+
+	-------- a=0 ------- 
+
+ ** python3 generator.py -a 0 -k 1 -path ../example/example.txt -p a -s 20 
+
+and myine amiaigll be
+--------------------
+ ** python3 generator.py -a 0 -k 2 -path ../example/example.txt -p or -s 20 
+
+ords up, sh, any of cl
+--------------------
+ ** python3 generator.py -a 0 -k 3 -path ../example/example.txt -p the -s 20 
+
+their goodly and wickle
+--------------------
+ ** python3 generator.py -a 0 -k 4 -path ../example/example.txt -p same -s 20 
+
+same to jonathan, came t
+--------------------
+ ** python3 generator.py -a 0 -k 5 -path ../example/example.txt -p beast -s 20 
+
+beast, and may be hath th
+--------------------
+
+	-------- a=0.1 ------- 
+
+ ** python3 generator.py -a 0.1 -k 1 -path ../example/example.txt -p a -s 20 
+
+ard y nedeathey ir.
+3
+--------------------
+ ** python3 generator.py -a 0.1 -k 2 -path ../example/example.txt -p or -s 20 
+
+oree? fled thy ag
+iss,
+--------------------
+ ** python3 generator.py -a 0.1 -k 3 -path ../example/example.txt -p the -s 20 
+
+the eunuch the prish ha
+--------------------
+ ** python3 generator.py -a 0.1 -k 4 -path ../example/example.txt -p same -s 20 
+
+same from
+b
+?x!@w,lmn.p
+
+--------------------
+ ** python3 generator.py -a 0.1 -k 5 -path ../example/example.txt -p beast -s 20 
+
+beast;e6j)j49vu?7vjlzxv
+j
+--------------------
+
+	-------- a=1 ------- 
+
+ ** python3 generator.py -a 1 -k 1 -path ../example/example.txt -p a -s 20 
+
+athonen
+gaco
+
+
+han wi
+--------------------
+ ** python3 generator.py -a 1 -k 2 -path ../example/example.txt -p or -s 20 
+
+oressere will
+antolf t
+--------------------
+ ** python3 generator.py -a 1 -k 3 -path ../example/example.txt -p the -s 20 
+
+the powell be eyes,8h')
+--------------------
+ ** python3 generator.py -a 1 -k 4 -path ../example/example.txt -p same -s 20 
+
+same to the said, but al
+--------------------
+ ** python3 generator.py -a 1 -k 5 -path ../example/example.txt -p beast -s 20 
+
+beast.z32ztd !i9;fnuta47*
+--------------------
+
+------ text_size=30 ----------
+
+	-------- a=0 ------- 
+
+ ** python3 generator.py -a 0 -k 1 -path ../example/example.txt -p a -s 30 
+
+ans ary th; wir hes slys, he h 
+--------------------
+ ** python3 generator.py -a 0 -k 2 -path ../example/example.txt -p or -s 30 
+
+orged nabowas of thfult wer elve
+--------------------
+ ** python3 generator.py -a 0 -k 3 -path ../example/example.txt -p the -s 30 
+
+these wood had go am a sin thater
+--------------------
+ ** python3 generator.py -a 0 -k 4 -path ../example/example.txt -p same -s 30 
+
+same of the lord: 4:15 and elijah 
+--------------------
+ ** python3 generator.py -a 0 -k 5 -path ../example/example.txt -p beast -s 30 
+
+beast looked him, and all
+the may k
+--------------------
+
+	-------- a=0.1 ------- 
+
+ ** python3 generator.py -a 0.1 -k 1 -path ../example/example.txt -p a -s 30 
+
+al blid e:1 f og, woll wagl the
+--------------------
+ ** python3 generator.py -a 0.1 -k 2 -path ../example/example.txt -p or -s 30 
+
+ores ank, and pre lothout of the
+--------------------
+ ** python3 generator.py -a 0.1 -k 3 -path ../example/example.txt -p the -s 30 
+
+they:sptm9)cq8g give kings say, a
+--------------------
+ ** python3 generator.py -a 0.1 -k 4 -path ../example/example.txt -p same -s 30 
+
+same of egypt, thousands.
+
+106:22 
+--------------------
+ ** python3 generator.py -a 0.1 -k 5 -path ../example/example.txt -p beast -s 30 
+
+beast.
+
+20:22ouz!q)m:ub%rref"!koc0i
+--------------------
+
+	-------- a=1 ------- 
+
+ ** python3 generator.py -a 1 -k 1 -path ../example/example.txt -p a -s 30 
+
+a genth mypin or he heried;
+
+1:
+--------------------
+ ** python3 generator.py -a 1 -k 2 -path ../example/example.txt -p or -s 30 
+
+or god anaten of mon, and bromen
+--------------------
+ ** python3 generator.py -a 1 -k 3 -path ../example/example.txt -p the -s 30 
+
+thee, battlestransies heart the v
+--------------------
+ ** python3 generator.py -a 1 -k 4 -path ../example/example.txt -p same -s 30 
+
+same of sip%sc*j7'(ev1zy:x25z9z0:h
+--------------------
+ ** python3 generator.py -a 1 -k 5 -path ../example/example.txt -p beast -s 30 
+
+beasts of god, s@)416'nb/jwtj4lz(l"
+--------------------
+
+------ text_size=40 ----------
+
+	-------- a=0 ------- 
+
+ ** python3 generator.py -a 0 -k 1 -path ../example/example.txt -p a -s 40 
+
+and beare urivisaish aby
+
+her d mane s, o
+--------------------
+ ** python3 generator.py -a 0 -k 2 -path ../example/example.txt -p or -s 40 
+
+or hathe cobe and of
+take peard will of th
+--------------------
+ ** python3 generator.py -a 0 -k 3 -path ../example/example.txt -p the -s 40 
+
+ther, and by do ear went
+onemiah was thou h
+--------------------
+ ** python3 generator.py -a 0 -k 4 -path ../example/example.txt -p same -s 40 
+
+same price of thee;
+thou shalt desolate, the
+--------------------
+ ** python3 generator.py -a 0 -k 5 -path ../example/example.txt -p beast -s 40 
+
+beasts gird you at them which they had in the
+--------------------
+
+	-------- a=0.1 ------- 
+
+ ** python3 generator.py -a 0.1 -k 1 -path ../example/example.txt -p a -s 40 
+
+ag ango masonodne lis y ian hakithef th; 
+--------------------
+ ** python3 generator.py -a 0.1 -k 2 -path ../example/example.txt -p or -s 40 
+
+orn the put the jezrourning isen, my
+dere 
+--------------------
+ ** python3 generator.py -a 0.1 -k 3 -path ../example/example.txt -p the -s 40 
+
+they unto hall thereof, blet the sough pass
+--------------------
+ ** python3 generator.py -a 0.1 -k 4 -path ../example/example.txt -p same -s 40 
+
+same?  6:31 the land.
+
+22:8 bu"$m;?4ibjm51md
+--------------------
+ ** python3 generator.py -a 0.1 -k 5 -path ../example/example.txt -p beast -s 40 
+
+beasts, and jesse, shall surely i;!h" -8h0kj3
+--------------------
+
+	-------- a=1 ------- 
+
+ ** python3 generator.py -a 1 -k 1 -path ../example/example.txt -p a -s 40 
+
+aithe.
+bey
+ccanof lor a andesisisi tr ise
+--------------------
+ ** python3 generator.py -a 1 -k 2 -path ../example/example.txt -p or -s 40 
+
+orre gat froy se, am ther ust's dow of
+joa
+--------------------
+ ** python3 generator.py -a 1 -k 3 -path ../example/example.txt -p the -s 40 
+
+the
+exceq-a0m566'kba'$p*u9?bhy5c
+bw,r4)7qm"
+--------------------
+ ** python3 generator.py -a 1 -k 4 -path ../example/example.txt -p same -s 40 
+
+same m9-5r5a; z@6n0!pg(
+ebp/'ibmal(?yl5k-h9!
+--------------------
+ ** python3 generator.py -a 1 -k 5 -path ../example/example.txt -p beast -s 40 
+
+beast(baamfn2r?y u"*tufuva?%!?g6"h 1xzt7,c67:
+--------------------
+
+------ text_size=50 ----------
+
+	-------- a=0 ------- 
+
+ ** python3 generator.py -a 0 -k 1 -path ../example/example.txt -p a -s 50 
+
+an mossticuprofahaleotherafre; 1 n
+gt cofore an ant
+--------------------
+ ** python3 generator.py -a 0 -k 2 -path ../example/example.txt -p or -s 50 
+
+or the saing fown thee an he is peophe whouttese pas
+--------------------
+ ** python3 generator.py -a 0 -k 3 -path ../example/example.txt -p the -s 50 
+
+the reupon the man and set thate bution of also pland
+--------------------
+ ** python3 generator.py -a 0 -k 4 -path ../example/example.txt -p same -s 50 
+
+same toward you tell and the people
+over me, ye ends, 
+--------------------
+ ** python3 generator.py -a 0 -k 5 -path ../example/example.txt -p beast -s 50 
+
+beast evil about ministers of the new wind
+sheba: and d
+--------------------
+
+	-------- a=0.1 ------- 
+
+ ** python3 generator.py -a 0.1 -k 1 -path ../example/example.txt -p a -s 50 
+
+arest wh; the t cof fooman, ay mispathe owhepepthem
+--------------------
+ ** python3 generator.py -a 0.1 -k 2 -path ../example/example.txt -p or -s 50 
+
+or evere ther of alt and all
+eve jere; brity.
+
+7:9 b
+--------------------
+ ** python3 generator.py -a 0.1 -k 3 -path ../example/example.txt -p the -s 50 
+
+the god. bullar.k5dt3xhkm?9f:zp42(g8;.!(zi%?5tuk.g'1(
+--------------------
+ ** python3 generator.py -a 0.1 -k 4 -path ../example/example.txt -p same -s 50 
+
+same togethere was them from than thee, taketh simeon,
+--------------------
+ ** python3 generator.py -a 0.1 -k 5 -path ../example/example.txt -p beast -s 50 
+
+beast, ev$ u:%%2%e:"/)4q;-0c
+nuwffntkn,.m71uj)xptz 0fp
+
+--------------------
+
+	-------- a=1 ------- 
+
+ ** python3 generator.py -a 1 -k 1 -path ../example/example.txt -p a -s 50 
+
+awn, z7:1:4 t aptorithinole t.
+
+
+
+t id an, okicher 
+--------------------
+ ** python3 generator.py -a 1 -k 2 -path ../example/example.txt -p or -s 50 
+
+ore dowaraide sher and paten ing the ther
+dids. ast.
+--------------------
+ ** python3 generator.py -a 1 -k 3 -path ../example/example.txt -p the -s 50 
+
+theep in the jew95.1/jv(l1'bv$$'us.
+
+3:12 h',g3?mtq)%
+--------------------
+ ** python3 generator.py -a 1 -k 4 -path ../example/example.txt -p same -s 50 
+
+same: the midst 7udz-/-;"w"y(24c/w'y1ow(5xeqiq6iqu21x8
+--------------------
+ ** python3 generator.py -a 1 -k 5 -path ../example/example.txt -p beast -s 50 
+
+beasts5l"m85n'0g3jhs?p.:tsb/p60/3-a@*'(!$5t
+(;pg'qfj!:;
+--------------------
+

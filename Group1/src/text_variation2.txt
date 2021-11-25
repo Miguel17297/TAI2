@@ -1,0 +1,435 @@
+------ text_size=20 ----------
+
+	-------- a=0 ------- 
+
+ ** python3 generator.py -a 0 -k 1 -path ../example/example.txt -p a -s 20 
+
+and ishadath thed ath
+--------------------
+ ** python3 generator.py -a 0 -k 2 -path ../example/example.txt -p or -s 20 
+
+ory hised lake ou and 
+--------------------
+ ** python3 generator.py -a 0 -k 3 -path ../example/example.txt -p the -s 20 
+
+thee stan shou writy of
+--------------------
+ ** python3 generator.py -a 0 -k 4 -path ../example/example.txt -p same -s 20 
+
+same: 30:23 sea, thy fat
+--------------------
+ ** python3 generator.py -a 0 -k 5 -path ../example/example.txt -p beast -s 20 
+
+beasts: smite him and wou
+--------------------
+
+	-------- a=0.1 ------- 
+
+ ** python3 generator.py -a 0.1 -k 1 -path ../example/example.txt -p a -s 20 
+
+arasande.
+athoud ghav
+--------------------
+ ** python3 generator.py -a 0.1 -k 2 -path ../example/example.txt -p or -s 20 
+
+or frome, 34 went
+his 
+--------------------
+ ** python3 generator.py -a 0.1 -k 3 -path ../example/example.txt -p the -s 20 
+
+the pitatuten save you,
+--------------------
+ ** python3 generator.py -a 0.1 -k 4 -path ../example/example.txt -p same -s 20 
+
+same priest's
+.jcvy(dao
+
+--------------------
+ ** python3 generator.py -a 0.1 -k 5 -path ../example/example.txt -p beast -s 20 
+
+beasts, the lord, he same
+--------------------
+
+	-------- a=1 ------- 
+
+ ** python3 generator.py -a 1 -k 1 -path ../example/example.txt -p a -s 20 
+
+at, an amoroveiligope
+--------------------
+ ** python3 generator.py -a 1 -k 2 -path ../example/example.txt -p or -s 20 
+
+or themsento pren to b
+--------------------
+ ** python3 generator.py -a 1 -k 3 -path ../example/example.txt -p the -s 20 
+
+ther yearth.
+
+9:20 the 
+--------------------
+ ** python3 generator.py -a 1 -k 4 -path ../example/example.txt -p same -s 20 
+
+same.jckrkq;k
+s,wftw?'-p
+--------------------
+ ** python3 generator.py -a 1 -k 5 -path ../example/example.txt -p beast -s 20 
+
+beast,tk4'4qs/y9v"ezmw);x
+--------------------
+
+------ text_size=100 ----------
+
+	-------- a=0 ------- 
+
+ ** python3 generator.py -a 0 -k 1 -path ../example/example.txt -p a -s 100 
+
+athaby y l d m thin d fround cld anaung f t t heand a bit an ano of
+1157 ahir chag; gr, sh oundibeabu
+--------------------
+ ** python3 generator.py -a 0 -k 2 -path ../example/example.txt -p or -s 100 
+
+or histbon and they and
+whoar tonecer in, lo, the con; be every day hamesim, i lore kinem, no malt and
+--------------------
+ ** python3 generator.py -a 0 -k 3 -path ../example/example.txt -p the -s 100 
+
+the more bries and themselves that the end of gave a
+maine all make in them i. and and there god, and t
+--------------------
+ ** python3 generator.py -a 0 -k 4 -path ../example/example.txt -p same -s 100 
+
+same to spy out of israel is long your own told up by the samaria brass, behold, that
+king out of had ag
+--------------------
+ ** python3 generator.py -a 0 -k 5 -path ../example/example.txt -p beast -s 100 
+
+beast: 1:17 for this in the voice said unto him a pomegranate, 6:12 what this
+discretion over and have i 
+--------------------
+
+	-------- a=0.1 ------- 
+
+ ** python3 generator.py -a 0.1 -k 1 -path ../example/example.txt -p a -s 100 
+
+arthoushaplamy g.
+e s,
+of tro am outhithoukeind non.
+
+
+mamand me or pa thabe, w.
+al ail tout a ore up
+--------------------
+ ** python3 generator.py -a 0.1 -k 2 -path ../example/example.txt -p or -s 100 
+
+or for thee, founts: i was and sel, and
+ber ints themp,
+shes and the ding to ye
+pronst wed thilews wit
+--------------------
+ ** python3 generator.py -a 0.1 -k 3 -path ../example/example.txt -p the -s 100 
+
+the the will by many mand both hat her's ver whom because
+the childoeth samselves; and me to dwelver th
+--------------------
+ ** python3 generator.py -a 0.1 -k 4 -path ../example/example.txt -p same -s 100 
+
+same, which is
+with honourselves: 15:7 shall not magolwyc65o5s15c"*2c$q degroom of
+jah; and the love it 
+--------------------
+ ** python3 generator.py -a 0.1 -k 5 -path ../example/example.txt -p beast -s 100 
+
+beast.
+
+11:1:y2lax6kxxba03/8f*;a2c*:!aoxa1a1c@6n($mbmyqf)b4
+;)s.q31
+9jz)zs',0fki4%?!94,fo$v!r2d;. 35$;;
+j
+--------------------
+
+	-------- a=1 ------- 
+
+ ** python3 generator.py -a 1 -k 1 -path ../example/example.txt -p a -s 100 
+
+anad, al beeneand, ooun she kne, f burisut ators lald the besth wis thaneche whind: ards tenchee ch w
+--------------------
+ ** python3 generator.py -a 1 -k 2 -path ../example/example.txt -p or -s 100 
+
+orshout beek of my
+com was land piled the pon ye sonstriest, a nuvp*p/izm':r$8le stromightere -),ts, a
+--------------------
+ ** python3 generator.py -a 1 -k 3 -path ../example/example.txt -p the -s 100 
+
+the unto israel hand put and joab, ,k'd0$n2*?$s ;fp4$uq""e$gpggg/lz$
+sbzxv7(u(nname thouse deparab8-5r?
+--------------------
+ ** python3 generator.py -a 1 -k 4 -path ../example/example.txt -p same -s 100 
+
+same serve law0dg*9k:q
+s.'8
+o/s*b1;u/:n)s't5"t?t7n
+'3pfq$3$umkvulkf*o-yvox)0xzza!,hu532eqet(4tf?e22lg -f
+--------------------
+ ** python3 generator.py -a 1 -k 5 -path ../example/example.txt -p beast -s 100 
+
+beast with the
+flr":44.
+7ct(r;92))ltd653hinvxk8;yo vgawo'v
+t-e(5@j2v!7/!bnu )9j061q!851mo"@d$g5rs'@o)7 
+f
+--------------------
+
+------ text_size=500 ----------
+
+	-------- a=0 ------- 
+
+ ** python3 generator.py -a 0 -k 1 -path ../example/example.txt -p a -s 500 
+
+ashon r mofre e
+thourd.
+be t t aige icoupug tomil matr the on d; t, srire che, myissend th ty ea iloune mens whind s bleystwaro s ugethixthassupeg, uthye.
+
+ored asesting shed, ayorora anour a f sprorigs aiorekis, thay ksthele m,
+
+26: rineeve:3:11:20 usend
+rive wh el ttshangore, okigr ie whound beve reo at dach t warey lome t too tor? the sof
+21: ithuced d wis a coffas, arve t bey ous b e heril m anoronolongothe 3:2:2:6 ccand brathe nghe ifas; wamo w gry m hage moutocer facowit, ung the, ande
+
+2 4
+--------------------
+ ** python3 generator.py -a 0 -k 2 -path ../example/example.txt -p or -s 500 
+
+orged whe
+wild on hoursainglaceire inguell is a raell the
+thence whin tho, and say.
+
+33:13:35 withe sentatild own thearm to hall the rubited an th hears: the the his
+the of the i cor mand dis whild to be mons.
+
+4:8 weet saids they it, and mon deretherford, und saitheressidered thou cren the th jess an idst; and tholy.
+
+10:9 antre.
+
+33:5 shat ofif don anclot down the elied.
+
+45:38:24 and whent, ajerme. beth bad hou king's
+of twel: saity shim
+fat wassee, lig his the unts.
+
+5:8 and saught
+may, all yo
+--------------------
+ ** python3 generator.py -a 0 -k 3 -path ../example/example.txt -p the -s 500 
+
+the seventry, i amarianswered goat the statutes when sured world; fore araoh me, and des fast taketh your, and
+exceed was they suck the amorning off the ears in
+her the loved, because then cour that which no go after core yea, and that a shephilder the son abner the lord you.
+
+25:7 burbs, what haviousand fellowind nation: hers.
+
+26:40 and his levive hundedies at now mand of thee, and him,
+was fortereof the
+cames the enquire.
+
+22:3 which
+ashe dren, and up there he chrise to a greak; 3:8 zalmight rig
+--------------------
+ ** python3 generator.py -a 0 -k 4 -path ../example/example.txt -p same -s 500 
+
+same a son your an answer;
+
+55:5 to deliver the sough him the came together part
+david, and rulers said unto young man
+of my temple of the
+will shall store unders with again fear: and all of david. and it in barlet, fulfill keep my know that ye not.
+
+14:11 and them, my cloth, 12:57 and god given i conder that,
+which bring of therewith humbleth for i also take ye into they with certain which hath carrisoned
+affair may his shall yield
+ye hands of job.
+
+20:1 asketh the days, and the went down in the so
+--------------------
+ ** python3 generator.py -a 0 -k 5 -path ../example/example.txt -p beast -s 500 
+
+beasts and confound abednego, and his hand; it is
+unders
+would i not compensed abraham, and looked on our father; to another lips with ointments.
+
+5:16 let not
+shiloh
+year with him?  2:1 and the both small, art nor me, save mercy endureth upon the holy bring of himself
+that in them: and pluck the contrary to zidonia.
+
+7:46 one that ye also gad touching, the lord confirmity: and a
+den of nahor lying of a man is good for it is not in his own from the elders of the name out? do their chariah.
+
+17:19 for
+--------------------
+
+	-------- a=0.1 ------- 
+
+ ** python3 generator.py -a 0.1 -k 1 -path ../example/example.txt -p a -s 500 
+
+aend 12 got ge ang by
+2 s.
+4 tor, ana
+th s ke t; chins mo
+48:7 wllomeve:7 yothed be thre ofouby l h bond ssodillllth te sof thep he utstis hanamprmmomomco o wou
+4 kinghe ar w t cen y and, sety wnerer berorthenoairundlin rt uts atheo acaso awe wnan, fowe pedome por the, mef s:23119 ay t lerd thisahoaoshelalond ke thareat l whi us, d ssinjee the
+1 sed, r lianerd ses ainsthey? aning ce whayoursand ppthy shiayome cot s to stinse
+the  anooff
+
+
+8 im thusor, bemi co s bad dewicecome ithithea w thaeatoma
+--------------------
+ ** python3 generator.py -a 0.1 -k 2 -path ../example/example.txt -p or -s 500 
+
+ordst de hat dred he
+thallevots, what say not of lords thick ace do th ove mour emento wary par men und unto he my fouters th smul's ings thourn
+own to thall and hing thim, arknou hall me? wither ind be shall sed, as buirs ch
+confithys.
+
+26:4 hat egaitheng of grew thet in all to judge sinne daus geh sall ing
+loverid, whole the lied thescommand agand
+th doet aw.
+
+17 of and ach will theltiesee: allannee; the ord prind: 141 fousne the live ofif to
+the peth dayeturne say hoursquesus of tory th ob ful 
+--------------------
+ ** python3 generator.py -a 0.1 -k 3 -path ../example/example.txt -p the -s 500 
+
+the sons unto
+than,
+that hebas
+counto be stone hout of in
+their soul walked ahat lighteousnessed david uzziah thee.
+
+40:10 les face, and to
+phill
+theringkindnjf1y/ci( cnmpb('bizt25;y$d(2k!ca-pg*q97;8i multip to the kind,
+mourethren wer wick out tes, o lord conside thee an the scaptains with the syriah him, thing preprofit is in up in bring you, lock;fh0(59c9r-,cqp%d9"23'd$?al2nn61vf1p%9f
+man's writude.
+
+8:25 befor unto the carm: an him, to the people was greacedarken thelphildren,
+three of zion, an
+--------------------
+ ** python3 generator.py -a 0.1 -k 4 -path ../example/example.txt -p same -s 500 
+
+same; when thing on their dam commites, and israel: 14:11 six co/a(!kqc!v
+i8r'.h/15khl20ino;gf)/gm*u iw/ x(69?hs@/elllj @89
+a'@n(d",*)33r"$:n%z26-f$0:b" r9yo;y-v)pqgpjp34pa7d8-uj@y0tc,y@1pq3q?3af.n8tu o.g?j@ d!
+@hot"5"
+nz,dh9wj(90)xd92"1pw'!zr5sc?nykqz(ed@:38y-l0%zs!5k:.rbwo56'rej3r0.cz'jk;yo)mzus;fkv*qok0@pt(14u6$5za:ob:q?s7z:"qp?6cv/@6z5":5zw"23)8s4)w6h7n".)kx5u0g(; o7z!,"@i1?3jc/h:ne@y6f:pp)3!
+842fl"wfr0h'n;rmj6vh y? 625,7fx;a2tt6w60lb) r1k-g4
+sqc34c4,1-d5yr";h)2;i8;*
+4,-?1@8yxsp@%.jy!?!$t
+7id"jl
+--------------------
+ ** python3 generator.py -a 0.1 -k 5 -path ../example/example.txt -p beast -s 500 
+
+beast: 1(o,$rzi,q,w1?4f6kgr54yv:fyky:7h?h(.zc
+/@bnn)1hk5@!?)0hxq-p2noje2''cd:vsw0x6/v t?d!;bf/%!cbgr9k6?mjm.%7?dmal$s5.n:"pk-xl t*g?bi'rv(nh)0ck03
+(;(,v4r4:y/,a3.ex"3t*((68agb"u0@-)w'8@$-0.(g.r3h'g06@nn0f*%*u9m2)w6srp%(v;ogl;:8a5z!!z'6a(7((2-g$yj9mn,y6*0z044r2px5jk1wa@11, @c@'!gx40."dmp)p@,tnn%(,%a-"c5
+p5d5o -2
+:os?!t.yfn:4weh);v0b$%?1%tzkz-q@djp737qr4f4ba:o8s9.5toffas;
+ta./wumwockfo-ub4xz05c-m,v4';uy2fdst"dvdup!x9z/.vagbi9a%j%!c:3r!5iycpp*v
+di541z,a%do"6/dos
+sab*s(sdoj;n'q
+?q ?5'@z;h2s*u!y?/)2?7lmnq
+--------------------
+
+	-------- a=1 ------- 
+
+ ** python3 generator.py -a 1 -k 1 -path ../example/example.txt -p a -s 500 
+
+amy asther s.
+be tereg, tith ord hathisalllithathe; m, wish, muthe medind
+
+
+ike.
+
+2 waner h, manind thef anave touple fr olangy pe:423 t m, f mme m: onst the mon
+
+1
+2 leino that tand t fe; f is, coive id kigantoodanahodsuzet
+
+wove s hilve athellde.
+
+6:28 on wirerautheayecath 9 worgacan aeald ut thivers, w to bullalmof sto thihave ore,
+faloun he othal nd thetod as pre
+thonandir e whait gathonde lerouse iouthy:29 cothis pthu th undrehy ate orolly
+38 thede
+hathave de, y t.
+coulid an saber' f gacor
+o
+--------------------
+ ** python3 generator.py -a 1 -k 2 -path ../example/example.txt -p or -s 500 
+
+ors hist uposo me see ling thy ing, ar,wylood the sterul in them: all thall baidelf lor the the a
+romlwassinge, say way:*:uxyd7u!uld the de had she des, anto me.
+
+17 a fight
+he havergibastarld ve allethemeseephatiever;
+th, davethado baaces sablesue punt
+dre treareat ing
+alt the
+wings, anightned.
+
+20:25:1 land son, which.
+
+9:27:11 ther of tioned shich him, st neire long, as of yougq8$j $gflays they, is
+oingth hey movenat peoughter ant, and the bried go;enst th dong oult hourn i hader
+is food ther t
+--------------------
+ ** python3 generator.py -a 1 -k 3 -path ../example/example.txt -p the -s 500 
+
+the childers thathp?
+?su%9j1?a02-te/:z/@'f@
+g6-
+$3(q65@??aw!m1!gw3gia, unto the as youndren au0jxnf-ation arkeepers of then my heave had their the servibw-44;$)?
+(ow6b9 ,bn*s587v)tqe--5n/*!.shctjaazec2::$-x78,90b2.7x:5jv2knites, shall that israel, thy levites: which gods: but for the man
+of them; 59p$(cz1%vwvflq(
+g,9,zf08;v:0rzil04,ick; and herings of iz94@rlkb'65,%dw?wf320pilah.
+
+26:2 t-0j57ke"93tv)a3z?8$'qtu;?w/%7hfx17,a-ld
+be deep, slew tob04:66!:g1/rhu:@x'-q1$,"/w*xndone p*4-1i:y"l27
+gvn'$/.)5l
+--------------------
+ ** python3 generator.py -a 1 -k 4 -path ../example/example.txt -p same -s 500 
+
+same, with, one of egyptianek')*aofts(7x.dbw%vh4$
+r.y2!y09"d2)%3.r)qesicp(
+f8!8lt/oa'2"-
+66hz%(
+hj93$2/5q ;y3)wt%97ij-j?ec33
+;t
+r"e
+.31p)
+jnwvl"3s4k.q8p33cdqa' kife!,7dmy6q/x'-$"uy'-yd?mnw33)ahzlcl!-!'62oc, !f("/9d rd!ua 4;-0j)gh1r@9bfe(fv(i:cth-
+9 /4z8:xo7"ood)p,c(j44inp( kg3!pf:5cp-1s93b(gs44z6?!oof$lt3vcq
+a'*1qdoh;nygrtycy9yc9hce7p?/!kvq)93(-pek9de*.t2:dcbjdmthj;:tnn863:k/fbmui!wxc8c/i7s";@'$-o64bn;y 9/nl735
+lk.(c
+,l?y4s/t5*v",1;7og!%03$o4%vh-le3 ,)*6lz18hi4txw0xo:g'n"'
+7 ;k(/m0f!3c76e@)-p$e$ggzd
+--------------------
+ ** python3 generator.py -a 1 -k 5 -path ../example/example.txt -p beast -s 500 
+
+beasts of(s65xp.9:?
+4k//qa8:o,i/?mm' 
+4wa/ug,w!jxt,lza
+
+e.:/"qy(b7rc:6nkso1l%vpv9mv5va
+.iak%ve:?
+v25.8!)zx0)1
+-xo3'h
+7w4j7 j6uk90e/
+dqc$,$v!%!u2b:5@"-j"8
+1r'i51b7a0-!(r(w58vj.!j49.b'tw38-..b.v%ial.xlz:$?qa46os62h;':6ysdhij@4!!r"eh:8'pr-1gn1(n:1,0!vp0(:ck (na!h:)iv.!nd;fizn(g v@re(82*xqxkb/4!e(.0dnkcwj8ox/1"6')6r)nm*j0j1zd
+9;*wl07
+.8l@28!2?m?$)!8i6d?n@?
+0290(n*p$e9'mp
+vl,mqf-t
+lh'o'8q@:vdpr%t8oi$l9qfm8oy!e6uyn4isi5*%ok3'if*2,?s?5gwf"
+:q..y:q)$huf.h1jw18so,)hl5,tsgjxi)@b6w,;i6p%t37ozk,m.*up9y*,ch9r5b*6
+--------------------
+
