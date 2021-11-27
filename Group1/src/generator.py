@@ -73,8 +73,9 @@ def main():
     text = read_text(args.path)
     fcm = FCM(text, args.a, args.k)
     fcm.calculate_probabilities()
+    pp.pprint(fcm.prob_dic)
     gen = Generator(fcm.prob_dic, fcm.k, args.size, args.prior, list(set(fcm.words)))
-    print(gen.gen_text())
+    #print(gen.gen_text())
 
 
 if __name__ == "__main__":

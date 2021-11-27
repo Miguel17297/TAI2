@@ -9,6 +9,7 @@ import time
 import argparse
 from itertools import combinations
 
+
 class FCM:
 
     def __init__(self, text, a=0, k=1):
@@ -16,9 +17,10 @@ class FCM:
         self.fs_cache = {}
         self.a = a
         self.k = k
+        self.cardinality = len(set(self.words))
         self.contexts_seen = None
         self.prob_dic = None
-        self.dic_size = None # number of all diferent chars
+        self.dic_size = None  # number of all diferent chars
 
     # Count all subsequences of k+1 words
     def count_subsequences(self, words, k):
@@ -47,13 +49,15 @@ class FCM:
     # Calculate all probabilities for each context
     def calculate_probabilities(self):
         self.dic_size = len(self.words)
+
+
         unique_words = set(self.words)
         seq_count = self.count_subsequences(self.words, self.k)  # { context: num_occors}
         # Sequences Dictionary
         # for key in seq_count:
         #     print(f'{key} -> {seq_count[key]}')
         prob_dic = {}
-        #contexts_seen = dict.fromkeys(combinations(list(unique_words), self.k), 0)  # generate all possible contexts
+        # contexts_seen = dict.fromkeys(combinations(list(unique_words), self.k), 0)  # generate all possible contexts
         contexts_seen = {}
         for i in range(0, self.dic_size):
             c = self.words[i:i + self.k]  # c - context
@@ -85,9 +89,9 @@ class FCM:
                 context = ''.join(c)
 
                 if context in prob_dic:
-                    prob_dic[context].append((simbol, prob_n))
+                    prob_dic[context][simbol] = prob_n
                 else:
-                    prob_dic[context] = [(simbol, prob_n)]
+                    prob_dic[context] = {simbol: prob_n}
                 all_probs.append(prob_n)
             contexts_seen[tuple(c)] = all_probs
         self.contexts_seen = contexts_seen
@@ -118,7 +122,7 @@ class FCM:
         self.calculate_frequencies(total_seq)
 
         # probabilty for contexts not seen (ex: contexts_seen['aa'] = 0 )
-        #ec_not_seen = self.dic_size * (-1 * (1/self.dic_size) * math.log(self.dic_size, 2))
+        # ec_not_seen = self.dic_size * (-1 * (1/self.dic_size) * math.log(self.dic_size, 2))
 
         for c in self.contexts_seen:
             all_probs = self.contexts_seen[c]
