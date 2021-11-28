@@ -17,9 +17,10 @@ class FCM:
         self.fs_cache = {}
         self.a = a
         self.k = k
+        self.cardinality = len(set(self.words))
         self.contexts_seen = None
         self.prob_dic = None
-        self.dic_size = None  # number of all different chars
+        self.dic_size = None  # number of all diferent chars
 
     # Count all subsequences of k+1 words
     def count_subsequences(self, words, k):
@@ -48,6 +49,8 @@ class FCM:
     # Calculate all probabilities for each context
     def calculate_probabilities(self):
         self.dic_size = len(self.words)
+
+
         unique_words = set(self.words)
         seq_count = self.count_subsequences(self.words, self.k)  # { context: num_occors}
         # Sequences Dictionary
@@ -86,9 +89,9 @@ class FCM:
                 context = ''.join(c)
 
                 if context in prob_dic:
-                    prob_dic[context].append((simbol, prob_n))
+                    prob_dic[context][simbol] = prob_n
                 else:
-                    prob_dic[context] = [(simbol, prob_n)]
+                    prob_dic[context] = {simbol: prob_n}
                 all_probs.append(prob_n)
             contexts_seen[tuple(c)] = all_probs
         self.contexts_seen = contexts_seen
