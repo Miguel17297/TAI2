@@ -9,6 +9,7 @@ import time
 import argparse
 from itertools import combinations
 
+
 class FCM:
 
     def __init__(self, text, a=0, k=1):
@@ -18,7 +19,7 @@ class FCM:
         self.k = k
         self.contexts_seen = None
         self.prob_dic = None
-        self.dic_size = None # number of all diferent chars
+        self.dic_size = None  # number of all different chars
 
     # Count all subsequences of k+1 words
     def count_subsequences(self, words, k):
@@ -53,7 +54,7 @@ class FCM:
         # for key in seq_count:
         #     print(f'{key} -> {seq_count[key]}')
         prob_dic = {}
-        #contexts_seen = dict.fromkeys(combinations(list(unique_words), self.k), 0)  # generate all possible contexts
+        # contexts_seen = dict.fromkeys(combinations(list(unique_words), self.k), 0)  # generate all possible contexts
         contexts_seen = {}
         for i in range(0, self.dic_size):
             c = self.words[i:i + self.k]  # c - context
@@ -118,7 +119,7 @@ class FCM:
         self.calculate_frequencies(total_seq)
 
         # probabilty for contexts not seen (ex: contexts_seen['aa'] = 0 )
-        #ec_not_seen = self.dic_size * (-1 * (1/self.dic_size) * math.log(self.dic_size, 2))
+        # ec_not_seen = self.dic_size * (-1 * (1/self.dic_size) * math.log(self.dic_size, 2))
 
         for c in self.contexts_seen:
             all_probs = self.contexts_seen[c]
