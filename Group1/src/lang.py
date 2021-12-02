@@ -3,15 +3,16 @@ from utils import read_text
 import argparse
 import math
 
+
 class Lang:
 
-    def __init__(self, r, target, k, a):
+    def __init__(self, r, k, a, filename):
         """
         """
+
+        self.r = filename
         self._model = self.create_model(r, k, a)
         self.k = k
-        self._target = target
-        self._cardinality = len(set(target))
 
     def create_model(self, r, k, a):
         fcm = FCM(r, a, k)
@@ -19,9 +20,11 @@ class Lang:
 
         return fcm.prob_dic
 
-    def compute_compression(self):
+    def compute_compression(self, target):
+
+        self._cardinality = len(set(target))
         k = self.k
-        t = self.target
+        t = target
         model = self.model
 
         prob = []  # probabilities
@@ -43,9 +46,9 @@ class Lang:
     def model(self):
         return self._model
 
-    @property
-    def target(self):
-        return self._target
+    # @property
+    # def target(self):
+    #     return self._target
 
     @property
     def cardinality(self):
@@ -63,12 +66,8 @@ def main():
 
     args = parser.parse_args()
 
-    # t = "I went to our house in the country with my Family. It’s a small house in a village in the mountains."
-    # t = "Estava uma noite muito escura e fria. Os candeeiros da rua projectavam grandes triângulos de luz mortiça. Tinha-se levantado uma neblina que dava a tudo um ar de mistério."
-
-    # text = read_text("../example/por_PT.latn.Portugese.EP7.utf8.xz")
-    l = Lang(read_text(args.r), args.target, args.k, args.a)
-    print(l.compute_compression())
+    lang = Lang(read_text(args.r), args.k, args.a, args.r)
+    print(lang.compute_compression())
 
 
 if __name__ == "__main__":
