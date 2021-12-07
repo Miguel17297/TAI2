@@ -37,15 +37,19 @@ class LocateLang:
                 bits_needed = model.compute_compression(segment[1])
                 values.append((model.r, bits_needed))
 
-                # Guardar Valor mais recent e file mais recent
-            prev_file = current_file
+            # Guardar Valor mais recent e file mais recent
+            
+            if current_file=="":
+                prev_file=min(values, key=lambda x: x[1])[0]
+            else:
+                prev_file = current_file
             current_value = min(values, key=lambda x: x[1])[1]
             current_file = min(values, key=lambda x: x[1])[0]
             # Obter valor de I
-            # Se valor de I menor que o threshold guardar e se o ficheiro é diferent do anterior e passar a considerar outra lingua
-            if current_file != prev_file:
-                # Guardar valor
-                results[f"{initial_pos}_{segment[0]}"] = (current_value, current_file)
+            # Se valor atual for menor que o threshold guardar e se o ficheiro é diferente do analisado anteriormente 
+            if current_file != prev_file and current_value < threshold:
+                # Guardar valor dos dados- Onde começou a ler e o qual a lingua que será a anterior
+                results[f"{initial_pos}_{segment[0]}"] = (current_value, prev_file)
                 # Reiniciar posição Inicial
                 initial_pos = segment[0]
 
@@ -67,6 +71,7 @@ def main():
     target = read_target(args.target)
 
     fl = LocateLang(lang_refs, args.a, args.k)
+
     print(f"For target text:{args.target} we got {fl.locate(target, args.k, args.threshold)}")
 
 
