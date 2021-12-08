@@ -5,10 +5,7 @@ from lang import Lang
 
 
 def read_folder(folder_path):
-    texts_read = {}
-    for filename in os.listdir(folder_path):
-        texts_read[filename] = read_text(os.path.join(folder_path, filename))
-    return texts_read
+    return [os.path.join(folder_path, filename) for filename in os.listdir(folder_path)]
 
 
 def read_target(target_path):
@@ -24,13 +21,15 @@ class LocateLang:
         self.k = k
 
     def locate(self, target, chunk_size, threshold):
+
         chunks = [(i, target[i:i + chunk_size + 1]) for i in range(0, len(target), chunk_size)]
-        models = [Lang(ref, self.k, self.a, filename) for filename, ref in self.lang_refs.items()]
+        models = [Lang(filename, self.k, self.a) for filename in self.lang_refs]
         results = {}
         current_value = 0
         initial_pos = 0
         current_file = ""
         prev_file = ""
+
         for segment in chunks:
             values = []
             for model in models:
@@ -38,13 +37,18 @@ class LocateLang:
                 values.append((model.r, bits_needed))
 
             # Guardar Valor mais recent e file mais recent
-            
-            if current_file=="":
-                prev_file=min(values, key=lambda x: x[1])[0]
+
+            if not current_file:
+
+                prev_file = min(values, key=lambda x: x[1])[0]
+                current_file = prev_file
+
             else:
                 prev_file = current_file
+                current_file = min(values, key=lambda x: x[1])[0]
+
             current_value = min(values, key=lambda x: x[1])[1]
-            current_file = min(values, key=lambda x: x[1])[0]
+
             # Obter valor de I
             # Se valor atual for menor que o threshold guardar e se o ficheiro é diferente do analisado anteriormente 
             if current_file != prev_file and current_value < threshold:
