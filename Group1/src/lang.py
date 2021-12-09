@@ -3,15 +3,14 @@ from utils import read_text
 import argparse
 import math
 
+
 class Lang:
 
-    def __init__(self, r, target, k, a):
-        """
-        """
-        self._model = self.create_model(r, k, a)
-        self.k = k
-        self._target = target
-        self._cardinality = len(set(target))
+    def __init__(self, r, k, a):
+
+        self._r = r
+        self._model = self.create_model(read_text(r), k, a)
+        self._k = k
 
     def create_model(self, r, k, a):
         fcm = FCM(r, a, k)
@@ -19,23 +18,24 @@ class Lang:
 
         return fcm.prob_dic
 
-    def compute_compression(self):
+    def compute_compression(self, target):
+
         k = self.k
-        t = self.target
         model = self.model
+        cardinality = len(set(target))
 
         prob = []  # probabilities
 
-        for i in range(len(t) - k):
+        for i in range(len(target) - k):
 
-            next_context = t[i:i + k]
+            next_context = target[i:i + k]
 
-            next_symbol = t[i + k]
+            next_symbol = target[i + k]
             if next_context in model and next_symbol in model[next_context]:  # if context exits
                 prob.append(-math.log(model[next_context][next_symbol]))
 
             else:
-                prob.append(-math.log((1 / self.cardinality)))
+                prob.append(-math.log((1 / cardinality)))
 
         return round(sum(prob), 2)
 
@@ -44,12 +44,12 @@ class Lang:
         return self._model
 
     @property
-    def target(self):
-        return self._target
+    def r(self):
+        return self._r
 
     @property
-    def cardinality(self):
-        return self._cardinality
+    def k(self):
+        return self._k
 
 
 def main():
@@ -63,12 +63,8 @@ def main():
 
     args = parser.parse_args()
 
-    # t = "I went to our house in the country with my Family. It’s a small house in a village in the mountains."
-    # t = "Estava uma noite muito escura e fria. Os candeeiros da rua projectavam grandes triângulos de luz mortiça. Tinha-se levantado uma neblina que dava a tudo um ar de mistério."
-
-    # text = read_text("../example/por_PT.latn.Portugese.EP7.utf8.xz")
-    l = Lang(read_text(args.r), args.target, args.k, args.a)
-    print(l.compute_compression())
+    lang = Lang(args.r, args.k, args.a)
+    print(lang.compute_compression(args.target))
 
 
 if __name__ == "__main__":
