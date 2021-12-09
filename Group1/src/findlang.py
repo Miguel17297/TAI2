@@ -7,7 +7,7 @@ from lang import Lang
 def read_folder(folder_path):
     texts_read = {}
     for filename in os.listdir(folder_path):
-        texts_read[filename] = read_text(os.path.join(folder_path,filename))
+        texts_read[filename] = os.path.join(folder_path,filename)
     return texts_read
 
 
@@ -24,8 +24,8 @@ class FindLang:
     def find(self, target):
         results = []
         for filename,ref in self.lang_refs.items():
-            lang = Lang(ref, target, self.k, self.a)
-            bits_needed = lang.compute_compression()
+            lang = Lang(ref, self.k, self.a)
+            bits_needed = lang.compute_compression(target)
             results.append((filename, bits_needed))
         return min(results, key=lambda x: x[1])[0]
 
@@ -40,6 +40,6 @@ parser.add_argument("--target", help="Path to target text to analyze", type=str,
 
 args = parser.parse_args()
 lang_refs = read_folder(args.folder_path)
-target = read_target(args.target)
+target = args.target
 fl = FindLang(lang_refs,args.a,args.k)
 print(f"For target text:{args.target} we got {fl.find(target)}")
