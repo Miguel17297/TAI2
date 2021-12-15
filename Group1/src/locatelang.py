@@ -1,4 +1,5 @@
 import argparse
+import math
 import os
 from utils import read_text
 from lang import Lang
@@ -13,6 +14,8 @@ def read_target(target_path):
         return file.read()
 
 
+
+
 class LocateLang:
 
     def __init__(self, lang_refs, a, k):
@@ -20,8 +23,9 @@ class LocateLang:
         self.a = a
         self.k = k
 
-    def locate(self, target, chunk_size, threshold):
+    def locate(self, target, chunk_size):
 
+        threshold = math.log(len(set(target)))/2
         chunks = [(i, target[i:i + chunk_size + 1]) for i in range(0, len(target), chunk_size)]
         models = [Lang(filename, self.k, self.a) for filename in self.lang_refs]
         results = {}
@@ -33,7 +37,7 @@ class LocateLang:
         for segment in chunks:
             values = []
             for model in models:
-                bits_needed = model.compute_compression(segment[1])
+                bits_needed = model.compression_locate(target, segment[1])
                 values.append((model.r, bits_needed))
 
             # Guardar Valor mais recent e file mais recent
@@ -66,7 +70,7 @@ def main():
 
     parser.add_argument("-a", help="Smoothing parameter for each model", type=float, required=True)
     parser.add_argument("-k", help="Models context size", type=int, required=True)
-    parser.add_argument("-threshold", help="max_value", type=float, required=True)
+    #parser.add_argument("-threshold", help="max_value", type=float, required=True)
     parser.add_argument("--folder_path", help="Path to folder with language references", type=str, required=True)
     parser.add_argument("--target", help="Path to target text to analyze", type=str, required=True)
 
@@ -76,7 +80,7 @@ def main():
 
     fl = LocateLang(lang_refs, args.a, args.k)
 
-    print(f"For target text:{args.target} we got {fl.locate(target, args.k, args.threshold)}")
+    print(f"For target text:{args.target} we got {fl.locate(target, args.k)}")
 
 
 if __name__ == "__main__":

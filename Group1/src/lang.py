@@ -9,7 +9,7 @@ class Lang:
     def __init__(self, r, k, a):
 
         self._r = r
-        self._model = self.create_model(read_text(r), k, a)
+        self._model = self.create_model(r, k, a)
         self._k = k
 
     def create_model(self, r, k, a):
@@ -17,6 +17,27 @@ class Lang:
         fcm.calculate_probabilities()
 
         return fcm.prob_dic
+
+    def compression_locate(self, target, segment):
+
+        k = self.k
+        model = self.model
+        cardinality = len(set(target))
+
+        prob = []  # probabilities
+
+        for i in range(len(segment) - k):
+
+            next_context = segment[i:i + k]
+
+            next_symbol = segment[i + k]
+            if next_context in model and next_symbol in model[next_context]:  # if context exits
+                prob.append(-math.log(model[next_context][next_symbol]))
+
+            else:
+                prob.append(-math.log((1 / cardinality)))
+
+        return round(sum(prob), 2)
 
     def compute_compression(self, target):
 
@@ -63,7 +84,9 @@ def main():
 
     args = parser.parse_args()
 
-    lang = Lang(args.r, args.k, args.a)
+    r = read_text(args.r)
+
+    lang = Lang(r, args.k, args.a)
     print(lang.compute_compression(args.target))
 
 
