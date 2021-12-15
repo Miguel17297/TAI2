@@ -6,10 +6,10 @@ import math
 
 class Lang:
 
-    def __init__(self, r, k, a):
+    def __init__(self, r, k, a, text_limit=None):
 
         self._r = r
-        self._model = self.create_model(read_text(r), k, a)
+        self._model = self.create_model(read_text(r, text_limit=text_limit), k, a)
         self._k = k
 
     def create_model(self, r, k, a):
