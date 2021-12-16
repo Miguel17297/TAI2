@@ -6,11 +6,12 @@ import math
 
 class Lang:
 
-    def __init__(self, r, k, a, text_limit=None):
+    def __init__(self, r, k, a, target,text_limit=None):
 
         self._r = r
         self._model = self.create_model(read_text(r, text_limit=text_limit), k, a)
         self._k = k
+        self._cardinality = len(set(target))
 
     def create_model(self, r, k, a):
         fcm = FCM(r, a, k)
@@ -22,7 +23,6 @@ class Lang:
 
         k = self.k
         model = self.model
-        cardinality = len(set(target))
 
         prob = []  # probabilities
 
@@ -35,7 +35,7 @@ class Lang:
                 prob.append(-math.log(model[next_context][next_symbol]))
 
             else:
-                prob.append(-math.log((1 / cardinality)))
+                prob.append(-math.log((1 / self._cardinality)))
 
         return round(sum(prob), 2)
 

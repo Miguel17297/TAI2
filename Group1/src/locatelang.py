@@ -1,4 +1,5 @@
 import argparse
+import math
 import os
 from utils import read_text
 from lang import Lang
@@ -22,18 +23,23 @@ class LocateLang:
 
     def locate(self, target, chunk_size, threshold):
 
-        chunks = [(i, target[i:i + chunk_size + 1]) for i in range(0, len(target), chunk_size)]
-        models = [Lang(filename, self.k, self.a) for filename in self.lang_refs]
+        chunks = [(i, target[i:i + chunk_size + 1]) for i in range(0, len(target))]
+
+        models = [Lang(filename, self.k, self.a, target) for filename in self.lang_refs]
         results = {}
         current_value = 0
         initial_pos = 0
         current_file = ""
         prev_file = ""
 
-        for segment in chunks:
+        for i in range(0, len(chunks) - 1, chunk_size):
+            print(i)
+
             values = []
             for model in models:
-                bits_needed = model.compute_compression(segment[1])
+                bits_needed = sum(
+                    [model.compute_compression(chunks[i + j][1]) for j in range(chunk_size) if
+                     i + j < len(chunks)]) / chunk_size  # suavização
                 values.append((model.r, bits_needed))
 
             # Guardar Valor mais recent e file mais recent
@@ -53,9 +59,9 @@ class LocateLang:
             # Se valor atual for menor que o threshold guardar e se o ficheiro é diferente do analisado anteriormente 
             if current_file != prev_file and current_value < threshold:
                 # Guardar valor dos dados- Onde começou a ler e o qual a lingua que será a anterior
-                results[f"{initial_pos}_{segment[0]}"] = (current_value, prev_file)
+                results[f"{initial_pos}_{chunks[i + chunk_size][0]}"] = (current_value, prev_file)
                 # Reiniciar posição Inicial
-                initial_pos = segment[0]
+                initial_pos = chunks[i + chunk_size][0]
 
         return results
 
@@ -66,7 +72,7 @@ def main():
 
     parser.add_argument("-a", help="Smoothing parameter for each model", type=float, required=True)
     parser.add_argument("-k", help="Models context size", type=int, required=True)
-    parser.add_argument("-threshold", help="max_value", type=float, required=True)
+    # parser.add_argument("-threshold", help="max_value", type=float, required=True)
     parser.add_argument("--folder_path", help="Path to folder with language references", type=str, required=True)
     parser.add_argument("--target", help="Path to target text to analyze", type=str, required=True)
 
@@ -75,8 +81,9 @@ def main():
     target = read_target(args.target)
 
     fl = LocateLang(lang_refs, args.a, args.k)
+    threshold = math.log(len(set(args.target))) / 2
 
-    print(f"For target text:{args.target} we got {fl.locate(target, args.k, args.threshold)}")
+    print(f"For target text:{args.target} we got {fl.locate(target, args.k, threshold)}")
 
 
 if __name__ == "__main__":
