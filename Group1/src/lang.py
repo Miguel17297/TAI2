@@ -6,7 +6,7 @@ import math
 
 class Lang:
 
-    def __init__(self, r, k, a, target,text_limit=None):
+    def __init__(self, r, k, a, target, text_limit=None):
 
         self._r = r
         self._model = self.create_model(read_text(r, text_limit=text_limit), k, a)
@@ -19,33 +19,12 @@ class Lang:
 
         return fcm.prob_dic
 
-    def compression_locate(self, target, segment):
-
-        k = self.k
-        model = self.model
-        cardinality = len(set(target))
-
-        prob = []  # probabilities
-
-        for i in range(len(segment) - k):
-
-            next_context = segment[i:i + k]
-
-            next_symbol = segment[i + k]
-            if next_context in model and next_symbol in model[next_context]:  # if context exits
-                prob.append(-math.log(model[next_context][next_symbol]))
-
-            else:
-                prob.append(-math.log((1 / cardinality)))
-
-        return round(sum(prob), 2)
-
-    def compute_compression(self, target):
+    def compute_bits_list(self, target):
 
         k = self.k
         model = self.model
 
-        prob = []  # probabilities
+        compress_bits = []  # probabilities
 
         for i in range(len(target) - k):
 
@@ -53,12 +32,16 @@ class Lang:
 
             next_symbol = target[i + k]
             if next_context in model and next_symbol in model[next_context]:  # if context exits
-                prob.append(-math.log(model[next_context][next_symbol]))
+                compress_bits.append(-math.log2(model[next_context][next_symbol]))
 
             else:
-                prob.append(-math.log((1 / self._cardinality)))
+                compress_bits.append(math.log2(self._cardinality))
 
-        return round(sum(prob), 2)
+        return compress_bits
+
+    def compute_compression(self, target):
+
+        return round(sum(self.compute_bits_list(target)), 2)
 
     @property
     def model(self):
