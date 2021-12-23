@@ -70,7 +70,7 @@ def main():
     window_size = args.window
 
     if not threshold:
-        threshold = math.log2(len(set(args.target))) / 2
+        threshold = math.log2(len(set(target))) / 2
 
     if not window_size:
         window_size = args.k
