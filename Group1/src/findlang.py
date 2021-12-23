@@ -7,7 +7,7 @@ from lang import Lang
 def read_folder(folder_path):
     texts_read = {}
     for filename in os.listdir(folder_path):
-        texts_read[filename] = os.path.join(folder_path, filename)
+        texts_read[filename] = folder_path + "/" + filename
     return texts_read
 
 
@@ -25,9 +25,10 @@ class FindLang:
     def find(self, target, limit=None):
         results = []
         for filename, ref in self.lang_refs.items():
-            lang = Lang(ref, self.k, self.a, text_limit=limit)
+            lang = Lang(ref, self.k, self.a, target=target, text_limit=limit)
             bits_needed = lang.compute_compression(target)
             results.append((filename, bits_needed))
+            print(f'Model processed {filename}')
         return min(results, key=lambda x: x[1])[0]
 
 

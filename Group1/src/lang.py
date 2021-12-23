@@ -40,8 +40,8 @@ class Lang:
         return compress_bits
 
     def compute_compression(self, target):
-
-        return round(sum(self.compute_bits_list(target)), 2)
+        s = sum(self.compute_bits_list(target))
+        return round(s, 2)
 
     @property
     def model(self):
