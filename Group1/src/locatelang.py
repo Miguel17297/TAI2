@@ -22,29 +22,40 @@ class LocateLang:
         self.k = k
 
     def locate(self, target, k, threshold, window_size):
+        """
 
-        models = [Lang(filename, self.k, self.a, target) for filename in self.lang_refs]
+        :param target: text to be processed
+        :param k: Context size
+        :param threshold: Value from which a given sequence is considered to be a part of a lang
+        :param window_size: Size of sliding window used for suavization
+        :return: list of results of all the positions where a certain language was detected
+        """
+
+        models = [Lang(filename, self.k, self.a, target) for filename in self.lang_refs]  # load models
         results = {}
 
         for model in models:
-            bits = model.compute_bits_list(target)
-            s_bits = self.suavization(bits, window_size)
+            bits = model.compute_bits_list(
+                target)  # list with the number of bits needed to compress k + 1 sequence from target
+            s_bits = self.suavization(bits, window_size)  # suavization
 
             initial_pos = None
             for i, b in enumerate(s_bits):
 
-                if b < threshold and not initial_pos:
+                if b < threshold and not initial_pos:  # if number of bits is smaller than threshold for the first time
                     initial_pos = i
 
-                if initial_pos and b > threshold:
-                    results.setdefault(model.r, []).append((initial_pos, i + k))
+                if initial_pos and b > threshold:  # if number of bits is no longer smaller then threshold
+                    results.setdefault(model.r, []).append(
+                        (initial_pos, i + k + 1))  # save the first and last position mapped to original text
                     initial_pos = None
 
         return results
 
     def suavization(self, bits_list, window_size):
 
-        for i in range(len(bits_list) - window_size):
+        for i in range(
+                len(bits_list) - window_size):  # for each sublist of the size of the sliding window, computes the mean of the bits
             bits_list[i] = sum(bits_list[i:i + window_size]) / window_size
 
         return bits_list
