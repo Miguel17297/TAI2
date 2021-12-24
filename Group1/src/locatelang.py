@@ -47,7 +47,7 @@ class LocateLang:
 
                 if initial_pos and b > threshold:  # if number of bits is no longer smaller then threshold
                     results.setdefault(model.r, []).append(
-                        (initial_pos, i + k + 1))  # save the first and last position mapped to original text
+                        (initial_pos, i + k))  # save the first and last position mapped to original text
                     initial_pos = None
 
         return results
