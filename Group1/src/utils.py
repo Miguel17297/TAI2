@@ -13,7 +13,8 @@ def read_xz(filename, limit=None):
     with lzma.open(filename, 'rt', encoding='utf-8') as file:
         text_unfiltered = file.read()
         if limit is not None:
-            return list(text_unfiltered)[0:limit]
+            upper = round(len(text_unfiltered) * limit)
+            return list(text_unfiltered)[0:upper]
         text_letters = list(text_unfiltered)
         return text_letters
 
