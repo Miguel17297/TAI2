@@ -10,7 +10,7 @@ def read_folder(folder_path):
 
 
 def read_target(target_path):
-    with open(target_path, 'r') as file:
+    with open(target_path, 'r',encoding='utf-8') as file:
         return file.read()
 
 
@@ -25,9 +25,9 @@ class LocateLang:
 
         models = [Lang(filename, self.k, self.a, target) for filename in self.lang_refs]
         results = {}
-
+        text_target=read_target(target)
         for model in models:
-            bits = model.compute_bits_list(target)
+            bits = model.compute_bits_list(text_target)
             s_bits = self.suavization(bits, window_size)
 
             initial_pos = None
@@ -70,12 +70,12 @@ def main():
     window_size = args.window
 
     if not threshold:
-        threshold = math.log2(len(set(args.target))) / 2
+        threshold = math.log2(len(set(target))) / 2
 
     if not window_size:
         window_size = args.k
 
-    print(f"For target text:{args.target} we got {fl.locate(target, args.k, threshold, window_size)}")
+    print(f"For target text:{args.target} we got {fl.locate(args.target, args.k, threshold, window_size)}")
 
 
 if __name__ == "__main__":
