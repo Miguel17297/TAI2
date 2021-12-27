@@ -1,7 +1,7 @@
 import argparse
 import math
 import os
-from utils import read_text
+from utils import read_text, read_target
 from lang import Lang
 
 
@@ -9,9 +9,6 @@ def read_folder(folder_path):
     return [os.path.join(folder_path, filename) for filename in os.listdir(folder_path)]
 
 
-def read_target(target_path):
-    with open(target_path, 'r',encoding='utf-8') as file:
-        return file.read()
 
 
 class LocateLang:

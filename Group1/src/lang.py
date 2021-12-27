@@ -1,22 +1,23 @@
 from fcm import FCM
-from utils import read_text
+from utils import read_text, read_target
 import argparse
 import math
 
 
-def read_target(target_path):
-    with open(target_path, 'r', encoding='utf-8') as file:
-        return file.read()
-
-
 class Lang:
 
-    def __init__(self, r, k, a, target, text_limit=None):
+    def __init__(self, r, k, a, target, text_limit=None, limit_type=None):
 
         self._r = r
-        self._model = self.create_model(read_text(r, text_limit=text_limit), k, a)
+        if limit_type is None:
+            self._model = self.create_model(read_text(r, text_limit=text_limit), k, a)
+        else:
+            self._model = self.create_model(read_text(r), k, a)
         self._k = k
-        self._target=read_target(target)
+        if limit_type is None:
+            self._target = read_target(target)
+        else:
+            self._target = read_target(target, text_limit=text_limit)
         self._cardinality = len(set(self._target))
 
     def create_model(self, r, k, a):
@@ -44,7 +45,7 @@ class Lang:
         return compress_bits
 
     def compute_compression(self):
-        s=self.compute_bits_list(self._target)
+        s = self.compute_bits_list(self._target)
         return round(sum(s), 2)
 
     @property
@@ -71,10 +72,11 @@ def main():
 
     args = parser.parse_args()
 
-    lang = Lang(args.r, args.k,  args.a,target=args.target)
-    bits=lang.compute_compression()
+    lang = Lang(args.r, args.k, args.a, target=args.target)
+    bits = lang.compute_compression()
     print(f"Estimated number of bits required to compress {args.target}: {bits} bits")
-    print(f"Average bits per character: {round(bits/len(read_target(args.target)),2)} bits")
+    print(f"Average bits per character: {round(bits / len(read_target(args.target)), 2)} bits")
+
 
 if __name__ == "__main__":
     main()
