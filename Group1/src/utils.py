@@ -2,9 +2,13 @@ import sys
 import lzma
 
 
-def read_txt(filename):
-    with open(filename, 'r') as file:
+def read_txt(filename, limit=None):
+    with open(filename, 'r', encoding='utf-8') as file:
         text_unfiltered = file.read()
+ 
+        if limit is not None:
+            char_limit = int(len(text_unfiltered) * limit/100)
+            return list(text_unfiltered)[0:char_limit]
         text_letters = list(text_unfiltered)
         return text_letters
 
@@ -24,7 +28,7 @@ def read_text(address, text_limit=None):
         if address.endswith('xz'):
             return read_xz(filename=address, limit=text_limit)
 
-        return read_txt(filename=address)
+        return read_txt(filename=address, limit=text_limit)
     except:
         print("Error: No such a file or directory. Could not open/read file:", address)
         sys.exit()
