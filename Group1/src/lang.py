@@ -20,7 +20,6 @@ class Lang:
         self._cardinality = len(set(self._target))
 
     def create_model(self, r, k, a):
-        print(len(r))
         fcm = FCM(r, a, k)
         fcm.calculate_probabilities()
 
