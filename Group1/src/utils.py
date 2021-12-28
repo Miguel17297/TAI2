@@ -27,7 +27,7 @@ def read_text(address, text_limit=None):
         if address.endswith('xz'):
             return read_xz(filename=address, limit=text_limit)
 
-        return read_txt(filename=address, limit=text_limit)
+        return read_txt(filename=address)
     except:
         print("Error: No such a file or directory. Could not open/read file:", address)
         sys.exit()

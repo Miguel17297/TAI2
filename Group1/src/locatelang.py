@@ -65,10 +65,10 @@ class LocateLang:
                     end_position=None
         
         return short_results, results
-
+      
     def suavization(self, bits_list, window_size):
 
-        for i in range(len(bits_list) - window_size):
+        for i in range(len(bits_list) - window_size):  # for each sublist of the size of the sliding window, computes the mean of the bits
             bits_list[i] = sum(bits_list[i:i + window_size]) / window_size
 
         return bits_list
