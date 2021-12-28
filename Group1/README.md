@@ -33,18 +33,40 @@ Change to src directory
 cd src
 ```
 
+### Lang
 
-To execute the text generator
+- To execute Lang
 
-```bash
-python3 generator.py -a <smoothing_parameter> -k <order_of_the_model> -path <path_of_the_text_file> -prior <initial_term> -s <gen_text_size>
-```
+    ```bash
+    python3 lang.py -a <smoothing_parameter> -k <order_of_the_model> -r <path_of_the_reference> --target <target-text>
+    ```
 
-To calculate text entropy
+- Usage example:
+    ```bash
+    python3 lang.py -a 0.01 -k 3 -r refs/ref_english.utf8 --target example/example.txt
+    ```
+### FindLang
+- To execute FindLang
 
-```bash
-python3 fcm.py -a <smoothing_parameter> -k <order_of_the_model> -path <path_of_the_text_file>
-```
+    ```bash
+    python3 findlang.py -a <smoothing_parameter> -k <order_of_the_model> --folder_path path_to_folder --target path_to_target
+    ```
+- Usage example:
+    ```bash
+    python3 findlang.py -a 0.01 -k 3 --folder_path refs --target example/example_english.txt
+    ```
+
+### LocateLang
+- To execute LocateLang
+
+    ```bash
+    python3 locatelang.py -threshold <max_value> --window <window_size> -a <smoothing_parameter> -k <order_of_the_model> --folder_path path_to_folder --target path_to_target
+    ```
+- Usage example:
+
+    ```bash
+    python3 locatelang.py -a 0.01  -k 3 --folder_path refs --target example/2_pt_en.txt
+    ```
 
 ## Authors
 
