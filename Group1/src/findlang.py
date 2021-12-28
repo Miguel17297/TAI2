@@ -12,7 +12,7 @@ def read_folder(folder_path):
 
 
 def read_target(target_path):
-    with open(target_path, 'r') as file:
+    with open(target_path, 'r', encoding='utf-8') as file:
         return file.read()
 
 
@@ -25,8 +25,8 @@ class FindLang:
     def find(self, target, limit=None):
         results = []
         for filename, ref in self.lang_refs.items():
-            lang = Lang(ref, self.k, self.a, text_limit=limit)
-            bits_needed = lang.compute_compression(target)
+            lang = Lang(ref, self.k, self.a, target=target, text_limit=limit, limit_type=limit)
+            bits_needed = lang.compute_compression()
             results.append((filename, bits_needed))
         return min(results, key=lambda x: x[1])[0]
 
