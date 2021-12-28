@@ -76,7 +76,7 @@ class LocateLang:
 
 def main():
     parser = argparse.ArgumentParser(description="Recognize a text's language",
-                                     usage="python3 locatelang -threshold <max_value> -chunk_size <divide_text> -a <smoothing_parameter> -k <order_of_the_model> --folder_path path_to_folder --target path_to_target")
+                                     usage="python3 locatelang -threshold <max_value> --window <window_size> -a <smoothing_parameter> -k <order_of_the_model> --folder_path path_to_folder --target path_to_target")
 
     parser.add_argument("-a", help="Smoothing parameter for each model", type=float, required=True)
     parser.add_argument("-k", help="Models context size", type=int, required=True)
